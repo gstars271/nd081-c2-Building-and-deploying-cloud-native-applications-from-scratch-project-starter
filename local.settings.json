@@ -1,13 +1,9 @@
 {
-  "IsEncrypted": false,
+  "IsEncrypted": true,
   "Values": {
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=demo2neighborstorageacc;AccountKey=jcrWjnP4FyYgF7rSZsh5Kfeeq0jDyXjHU0vNPA+XELqe0js0pevbA1RYOr+bGKu2Oxt2D86xbN+D+AStpzqm9w==;EndpointSuffix=core.windows.net",
-    "FUNCTIONS_WORKER_RUNTIME": "python",
-    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=d79f9a76-789d-4a84-bf37-d5ba47984523;IngestionEndpoint=https://westus-0.in.applicationinsights.azure.com/;LiveEndpoint=https://westus.livediagnostics.monitor.azure.com/;ApplicationId=32799d50-bc20-430f-98f3-66e16312289f",
-    "FUNCTIONS_EXTENSION_VERSION": "~4",
-    "MONGODB_CONNECTIONSTRING": "mongodb://demo2cosmosdb:s2NTJcxZJaxdduiegQNTTHAl1xZZDeeKhZTz48R80REEF4QRIH8CnJl3WJ1HsXp1lIrd6xdQBIRmACDbA9xsAQ==@demo2cosmosdb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@demo2cosmosdb@",
-    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=demo2neighborstorageacc;AccountKey=jcrWjnP4FyYgF7rSZsh5Kfeeq0jDyXjHU0vNPA+XELqe0js0pevbA1RYOr+bGKu2Oxt2D86xbN+D+AStpzqm9w==;EndpointSuffix=core.windows.net",
-    "WEBSITE_CONTENTSHARE": "demo2-neighborly9b34",
-    "WEBSITE_RUN_FROM_PACKAGE": "https://demo2neighborstorageacc.blob.core.windows.net/github-actions-deploy/Functionapp_2024102610361100.zip?sv=2023-11-03&st=2024-10-26T10%3A31%3A01Z&se=2025-10-26T10%3A36%3A01Z&sr=b&sp=r&sig=8RHqNuC2tbs%2BgJkpIKYaQ2a%2FjTHFOC1YeHy9HnyrneU%3D"
-  }
+    "FUNCTIONS_WORKER_RUNTIME": "CfDJ8KvJ6DmYyMJCgkPKMHi9yggxobSNL+EiBudqjTbkN08MV8FPGx7WqKyJXi1vK5/3O48YnxQvGjJtBiH2gbzh8qUxrA2On+1JRf1xQeWwdKwATocSwT1CMT9SN2gtzXs0ZQ=="
+  },
+  "ConnectionStrings": {},
+
+  "AzureWebJobsStorage": ""
 }
