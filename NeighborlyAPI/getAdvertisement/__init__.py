@@ -17,7 +17,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         try:
             url = os.getenv("MONGODB_CONNECTIONSTRING")  # TODO: Update with appropriate MongoDB connection information
             client = pymongo.MongoClient(url)
-            database = client['neighbor']
+            database = client['demo2database']
             collection = database['advertisements']
            
             query = {'_id': ObjectId(id)}
