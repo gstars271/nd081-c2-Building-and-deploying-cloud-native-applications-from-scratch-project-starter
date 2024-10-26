@@ -28,17 +28,12 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: |
-          cd NeighborlyFrontEnd
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
-        run: |
-          cd NeighborlyFrontEnd
-          zip -r ../release.zip .
-          cd ..
+        run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
@@ -70,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_83D0C9D30086493E89F13002E6E3348E }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_AE8FCF31DD5B44609B701486839FEEE5 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_77997C36C28D417D9642B9A1B0A3D29E }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E1E9168D01BE41479AD56523AC13F0E2 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_66F25ED52A9B471AB78E234D070DC0C4 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7F804DB0AF9B4B32931878596594991B }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -80,5 +75,4 @@ jobs:
         with:
           app-name: 'neighborly-client-v1'
           slot-name: 'Production'
-          package: '.'
           
