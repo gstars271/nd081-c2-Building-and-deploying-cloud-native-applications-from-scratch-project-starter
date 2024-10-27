@@ -5,9 +5,8 @@
       "type": "eventHubTrigger",
       "name": "event",
       "direction": "in",
-	  "eventHubName": "neighborly-event-hub", 
-	  "connection": "EventHubConnectionString"
+      "eventHubName": "neighborly-event-hub",
+      "connection": "EventHubConnectionString"
     }
   ]
 }
-
